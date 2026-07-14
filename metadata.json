@@ -1,0 +1,6 @@
+{
+  "name": "Sistem PMB Mahasiswa Baru",
+  "description": "Aplikasi Penerimaan Mahasiswa Baru (PMB) online untuk calon mahasiswa dan verifikasi data oleh admin.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
