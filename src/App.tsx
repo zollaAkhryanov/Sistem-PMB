@@ -318,10 +318,10 @@ function AppContent() {
     return (
       <div className="min-h-screen bg-[#f8fafc] flex flex-col md:flex-row">
         {/* Desktop Sidebar / Mobile Header combined */}
-        <aside className="w-full md:w-64 sleek-gradient text-white flex flex-col border-r border-slate-950/20 shrink-0 shadow-2xl">
+        <aside className="w-full md:w-64 md:h-screen md:sticky md:top-0 sleek-gradient text-white flex flex-col border-r border-slate-950/20 shrink-0 shadow-2xl">
           <div className="p-5 border-b border-slate-800/50 flex items-center justify-between">
             <div className="flex items-center gap-3">
-              <div className="w-9 h-9 rounded-xl bg-indigo-600 text-white flex items-center justify-center font-bold font-display shadow-lg shadow-indigo-600/30 border border-indigo-500/20">UNM</div>
+              <div className="w-9 h-9 rounded-xl bg-indigo-600 text-white flex items-center justify-center font-bold font-display shadow-lg shadow-indigo-600/30 border border-indigo-500/20">SPC</div>
               <div>
                 <span className="text-[10px] text-indigo-400 font-extrabold uppercase tracking-widest block font-display">Admin Panel</span>
                 <span className="text-sm font-bold block leading-tight font-display tracking-tight text-slate-100">Sistem PMB</span>
@@ -377,7 +377,7 @@ function AppContent() {
         </aside>
 
         {/* Main Content Area */}
-        <main className="flex-1 p-6 md:p-8 max-w-5xl overflow-y-auto bg-[#f8fafc]">
+        <main className="flex-1 p-4 sm:p-6 md:p-8 w-full max-w-7xl mx-auto overflow-y-auto bg-[#f8fafc] md:h-screen">
           {adminTab === 'dashboard' && <AdminDashboard />}
           {adminTab === 'gelombang' && <GelombangManager />}
           {adminTab === 'jalur' && <JalurManager />}
@@ -407,10 +407,10 @@ function AppContent() {
   return (
     <div className="min-h-screen bg-[#f8fafc] flex flex-col md:flex-row">
       {/* Sidebar navigation */}
-      <aside className="w-full md:w-64 student-gradient text-white flex flex-col border-r border-indigo-950/20 shrink-0 shadow-2xl">
+      <aside className="w-full md:w-64 md:h-screen md:sticky md:top-0 student-gradient text-white flex flex-col border-r border-indigo-950/20 shrink-0 shadow-2xl">
         <div className="p-5 border-b border-indigo-900/40 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="w-9 h-9 rounded-xl bg-indigo-600 text-white flex items-center justify-center font-bold font-display shadow-lg shadow-indigo-600/30 border border-indigo-500/20">UNM</div>
+            <div className="w-9 h-9 rounded-xl bg-indigo-600 text-white flex items-center justify-center font-bold font-display shadow-lg shadow-indigo-600/30 border border-indigo-500/20">SPC</div>
             <div>
               <span className="text-[10px] text-indigo-300 font-extrabold uppercase tracking-widest block font-display">PMB Portal</span>
               <span className="text-sm font-bold block leading-tight font-display tracking-tight text-slate-100">Mhs Dashboard</span>
@@ -466,7 +466,7 @@ function AppContent() {
       </aside>
 
       {/* Main viewport */}
-      <main className="flex-1 p-6 md:p-8 max-w-5xl overflow-y-auto bg-[#f8fafc]">
+      <main className="flex-1 p-4 sm:p-6 md:p-8 w-full max-w-7xl mx-auto overflow-y-auto bg-[#f8fafc] md:h-screen">
         {mhsTab === 'dashboard' && <MhsDashboard onNavigate={setMhsTab} />}
         {mhsTab === 'biodata' && <MhsBiodata />}
         {mhsTab === 'upload_berkas' && <MhsUploadBerkas />}
