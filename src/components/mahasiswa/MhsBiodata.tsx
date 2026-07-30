@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from 'react';
 import { Save, User, FileText, Landmark, GraduationCap } from 'lucide-react';
 import { Pendaftaran, ProgramStudi, JalurPendaftaran, Gelombang } from '../../types';
