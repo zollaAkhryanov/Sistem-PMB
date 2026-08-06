@@ -1,3 +1,9 @@
+Nama Anggota Kelompok
+1.	Zolla Akhryanov (14523204)
+2.	Meita Sekarini (14523079)
+3.	Aura Navisa Arianti (14523075)
+4.	Nazwa Aeni (14523073)
+5.	Zahrah Nafisah (14523063)
 
 
 ## Run Locally
